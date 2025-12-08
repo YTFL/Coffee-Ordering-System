@@ -1,0 +1,132 @@
+/* Cart CSS */
+.cart-page,
+.cart-empty {
+    padding: 2rem 1rem;
+}
+
+.cart-empty {
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    gap: 1rem;
+}
+
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.item-info {
+    flex-grow: 1;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.item-quantity button {
+    padding: 0.2rem 0.5rem;
+    background: #eee;
+    border-radius: 4px;
+}
+
+.btn-remove {
+    background: transparent;
+    color: var(--error);
+    font-size: 1.5rem;
+}
+
+.cart-summary {
+    margin-top: 2rem;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-checkout {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background: var(--success);
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* CoffeeDetails CSS */
+.details-page {
+    padding: 2rem 1rem;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .details-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.details-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.details-content h1 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.details-content .price {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.btn-add-large {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    margin-top: 2rem;
+}
+
+.reviews-section {
+    margin-top: 3rem;
+}
+
+.review-card {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.review-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}.quantity-controls-large { display: flex; gap: 1rem; align-items: center; justify-content: center; margin-top: 2rem; } .quantity-controls-large button { padding: 0.8rem 1.5rem; background: var(--primary-color); color: white; font-size: 1.2rem; border-radius: 4px; min-width: 50px; } .quantity-controls-large span { font-size: 1.5rem; font-weight: bold; min-width: 40px; text-align: center; }

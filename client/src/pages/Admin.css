@@ -1,0 +1,265 @@
+.admin-page {
+    padding: 2rem 0;
+}
+
+.admin-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+/* Status Filters */
+.status-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.status-filters button {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.status-filters button:hover {
+    border-color: var(--primary-color);
+    background: #f8f8f8;
+}
+
+.status-filters button.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Admin Tabs (legacy) */
+.admin-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.admin-tabs button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.admin-tabs button.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Orders Table */
+.admin-orders {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-orders h3 {
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.admin-orders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-orders th,
+.admin-orders td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-orders th {
+    background: #f8f8f8;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.admin-orders tr:hover {
+    background: #fafafa;
+}
+
+.admin-orders select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-preparing {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.status-completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.btn-view-details {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-view-details:hover {
+    background: #0056b3;
+}
+
+/* Order Details Expansion */
+.order-details-row {
+    background: #f8f9fa !important;
+}
+
+.order-details-content {
+    padding: 1.5rem;
+}
+
+.order-details-content h4 {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.order-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.order-item-detail {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.order-item-detail img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.item-detail-info {
+    flex: 1;
+}
+
+.item-detail-info strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--secondary-color);
+}
+
+.item-detail-info p {
+    margin: 0.1rem 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.item-detail-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.order-detail-summary {
+    text-align: right;
+    padding-top: 1rem;
+    border-top: 2px solid #ddd;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.no-orders {
+    text-align: center;
+    padding: 2rem;
+    color: #888;
+    font-style: italic;
+}
+
+/* Coffee Management (legacy) */
+.coffee-form-section {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.coffee-form-section form {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.coffee-form-section input {
+    flex: 1;
+    min-width: 200px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.admin-coffee-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.admin-coffee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.btn-remove {
+    background: var(--error);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

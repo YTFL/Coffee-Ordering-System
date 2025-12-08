@@ -1,0 +1,200 @@
+/* Hero Section */
+.home-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=1600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-hero:hover {
+    transform: scale(1.05);
+    background-color: var(--secondary-color);
+}
+
+/* Home Content */
+.home-content {
+    padding-bottom: 4rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.section-header-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.view-all-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Recent Orders - Mini Cards */
+.recent-orders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.mini-order-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    transition: transform 0.2s;
+}
+
+.mini-order-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mini-order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.mini-id {
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.status-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-badge-mini {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.status-pending {
+    background-color: #ffd700;
+    color: #856404;
+}
+
+.status-preparing {
+    background-color: #add8e6;
+    color: #004085;
+}
+
+.status-completed {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Dot active */
+.status-cancelled {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Dot active */
+
+.mini-date,
+.mini-items {
+    font-size: 0.85rem;
+    color: #888;
+    margin: 0.2rem 0;
+}
+
+.mini-total {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Active Orders Highlight */
+.active-card-highlight {
+    border: 2px solid var(--primary-color);
+    background-color: #fffaf5;
+}
+
+.active-loader {
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+
+.dot {
+    animation: blink 1.4s infinite both;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.2;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.section-featured h2 {
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.section-featured .coffee-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 900px;
+    margin: 0 auto;
+}

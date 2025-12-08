@@ -1,0 +1,23 @@
+
+import React from 'react';
+import './StarRating.css';
+
+const StarRating = ({ rating, setRating, readOnly = false }) => {
+    const stars = [1, 2, 3, 4, 5];
+
+    return (
+        <div className="star-rating">
+            {stars.map((star) => (
+                <span
+                    key={star}
+                    className={`star ${star <= rating ? 'filled' : ''} ${readOnly ? 'readonly' : 'interactive'}`}
+                    onClick={() => !readOnly && setRating(star)}
+                >
+                    ★
+                </span>
+            ))}
+        </div>
+    );
+};
+
+export default StarRating;
